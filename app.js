@@ -17,6 +17,18 @@
     };
   });
 
+  app.controller('GalleryController', function() {
+		this.current = 0;
+    this.setCurrent = function(value) {
+      if (value) {
+        this.current = value;
+      }
+      else {
+        this.current = 0;
+      }
+    };
+  });
+
 
   var gems = [
   {
